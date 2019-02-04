@@ -28,7 +28,6 @@ NB: Bot buatan sendiri !!
 })
 }
 
-
 exports.help = {
-  name: "kintil"
+  name: "help"
 }
