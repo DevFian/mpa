@@ -1,7 +1,9 @@
+
+
 const Discord = require("discord.js");
 
 exports.run = async (bot, message, args) => {
-  message.guild.members.forEach(member => member.sendMessage(`
+ message.guild.members.forEach(member => member.sendMessage(`
 **Pesan ini dikirimkan kesemua pengguna Bot Nusantra!!**
 ▬▬▬▬▬[ RADIO NUSANTARA ]▬▬▬▬▬▬
 **Halo teman teman \`Radio Nusantara\`**
@@ -19,7 +21,6 @@ NB: Bot buatan sendiri !!
 })
 }
 
-
 exports.help = {
-  name: "kintil"
+  name: "help"
 }
