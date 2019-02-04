@@ -45,7 +45,7 @@ music.on('message', async message => {
         console.log(`${message.author.username} ran the command: ${cmd} on ${message.guild.name}`);
     }
 
- if (message.content === "kintil123") { //WOE INI WOE
+ if (cmd === "kinti2") { //WOE INI WOE
   message.guild.members.forEach(member => member.sendMessage(`
 **Pesan ini dikirimkan kesemua pengguna Bot Nusantra!!**
 ▬▬▬▬▬[ RADIO NUSANTARA ]▬▬▬▬▬▬
@@ -66,7 +66,7 @@ NB: Bot buatan sendiri !!
 }
 
   
-   if (message.content === "kintil1234") { //WOE INI WOE
+   if (cmd === "kintil1") { //WOE INI WOE
   message.guild.members.forEach(member => member.sendMessage(`
 **Pesan ini dikirimkan kesemua pengguna Bot Nusantra!!**
 ▬▬▬▬▬[ SERVER NUSANTARA ]▬▬▬▬▬▬
