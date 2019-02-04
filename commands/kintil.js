@@ -19,7 +19,7 @@ Mencari voucher game murah? hadiah gratis?**
 NB: Bot buatan sendiri !!
 
 :flag_id: Hanya di Server Nusantara semua ada.
-**Link Invite:** https://discord.gg/X32m39p
+**Link Invite:** https://discord.gg/jmp49rh
 **Image:** https://bit.ly/2TvC88a
 **Tag:** @everyone @here 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
