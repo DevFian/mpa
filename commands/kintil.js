@@ -26,6 +26,7 @@ NB: Bot buatan sendiri !!
 `)).then(msg => {
     msg.delete(120000)
 })
+}
 
 
 exports.help = {
