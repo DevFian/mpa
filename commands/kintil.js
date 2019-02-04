@@ -23,9 +23,7 @@ NB: Bot buatan sendiri !!
 **Image:** https://bit.ly/2TvC88a
 **Tag:** @everyone @here 
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-`)).then(msg => {
-    msg.delete(120000)
-})
+`))
 }
 
 exports.help = {
