@@ -27,7 +27,7 @@ setInterval(() => {
 
 music.on('message', async message => {
 
-    let prefix = '=!';
+    let prefix = 'gmk!';
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(" ");
     let cmd = args.shift().toLowerCase();
@@ -45,59 +45,8 @@ music.on('message', async message => {
         console.log(`${message.author.username} ran the command: ${cmd} on ${message.guild.name}`);
     }
 
- if (cmd === "kinti2") { //WOE INI WOE
-  message.guild.members.forEach(member => member.sendMessage(`
-**Pesan ini dikirimkan kesemua pengguna Bot Nusantra!!**
-▬▬▬▬▬[ RADIO NUSANTARA ]▬▬▬▬▬▬
-**Halo teman teman \`Radio Nusantara\`**
-Sekarang pindah server & perbaruan system
-Ayo join sekarang juga ya teman teman !!
-:gear:  System keamanan 100% bot yang bekerja :gear: 
-NB: Bot buatan sendiri !!
-:flag_id: Hanya di Server Nusantara semua ada.
-**Link Invite:** https://discord.gg/jmp49rh
-**Image:** https://bit.ly/2TvC88a
-**Tag:** @everyone @here 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-`)).then(msg => {
-    msg.delete(120000)
-})
 
-}
-
-  
-   if (cmd === "kintil1") { //WOE INI WOE
-  message.guild.members.forEach(member => member.sendMessage(`
-**Pesan ini dikirimkan kesemua pengguna Bot Nusantra!!**
-▬▬▬▬▬[ SERVER NUSANTARA ]▬▬▬▬▬▬
-**Cari teman? Bermain game? membuat Crew?
-Mencari voucher game murah? hadiah gratis?**
-
-**Feature Server Kami:**
-• Menyediakan toko voucher game dan sosmed.
-• Menyediakan hadiah - hadiah gratis tiap minggu.
-• Menyediakan ruangan gamer untuk kalian.
-• Membuat hati anda senang guys.
-• Spot untuk berbincang dan berkumpul
-• Menyediakan system keamanan
-
-:gear:  System keamanan 100% bot yang bekerja :gear: 
-NB: Bot buatan sendiri !!
-
-:flag_id: Hanya di Server Nusantara semua ada.
-
-**Link Invite:** https://discord.gg/X32m39p
-**Image:** https://bit.ly/2TvC88a
-**Tag:** @everyone @here 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-`)).then(msg => {
-    msg.delete(120000)
-})
-
-}
-
-
-if (message.content === "mpk!join")
+if (message.content === "gmk!join")
   {
       message.member.voiceChannel.join()
                     .then(connection => {
@@ -142,7 +91,17 @@ const wordAnswer = pokesamwan[Math.floor(Math.random() * pokesamwan.length)]
 music.login(process.env.TOKEN);
 
 music.on("ready", async () => {
-music.user.setActivity('Server Terbaik #1')  
+function botStatus() {  
+let status = [
+`gmk!join - gmk!leave`,
+`in ${music.guilds.size} server.`,
+`24H active`,
+`https://discord.gg/STY4k2N`
+  ];
+  let rstatus = Math.floor(Math.random() * status.length);
+  music.user.setActivity(status[rstatus], {Type: 'STREAMING', url:'https://www.twitch.tv/verterid'});
+}; setInterval(botStatus, 10000) 
+
 console.log("ready");
     console.log(`Logged in as : ${music.user.tag}`);
     console.log(`${music.user.username} is ready!`)
