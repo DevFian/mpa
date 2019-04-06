@@ -55,8 +55,8 @@ if (message.content === "gmk!join")
         	connection.dispatcher.setVolumeLogarithmic(1);
     message.channel.send({embed: new Discord.RichEmbed()
                     .setAuthor(message.author.tag,message.author.avatarURL)
-                    .setDescription(`Music Player Kpop, Joined Your Voice channel <a:a:532595746638397440>`)
-.setColor("RANDOM")
+                    .setDescription(`Gobang Music Kpop, Joined Your Voice channel 📻`)
+.setColor("#0aaaeb")
                          })
 function tetew() {
     console.log("joined channel");
@@ -78,8 +78,8 @@ const wordAnswer = pokesamwan[Math.floor(Math.random() * pokesamwan.length)]
         	connection.dispatcher.setVolumeLogarithmic(1);
     message.channel.send({embed: new Discord.RichEmbed()
                     .setAuthor(message.author.tag,message.author.avatarURL)
-                    .setDescription(`Radio Music Next <a:a:532595746638397440>`)
-.setColor("RANDOM")
+                    .setDescription(`Radio Music Next ⏭`)
+.setColor("#0aaaeb")
                          })
 }; setInterval(tetew, 1800000)
                         
